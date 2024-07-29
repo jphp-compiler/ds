@@ -1,0 +1,106 @@
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin:0 auto;
+	width:640px;
+	/*height:263px;*/
+	height:220px;
+	/*background:#252525 url(/img/img/bg_slideshow.jpg) no-repeat 0 0;*/
+	position:relative;
+	color:white;
+	border:0px solid red;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:560px;
+	/*height:263px;*/
+	height:220px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:540px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:263px;
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control, .control-not-active {
+  display:block;
+  width:39px;
+	/*height:263px;*/
+	height:220px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(/img/slideshow/control_left.jpg) no-repeat 0 center;
+}
+#rightControl {
+  top:0;
+  right:0;
+  background:transparent url(/img/slideshow/control_right.jpg) no-repeat 0 center;
+}
+#leftControl-not-active {
+  top:0;
+  left:0;
+  background:transparent url(/img/slideshow/control_left_no_active.jpg) no-repeat 0 center;
+}
+#rightControl-not-active {
+  top:0;
+  right:0;
+  background:transparent url(/img/slideshow/control_right_no_active.jpg) no-repeat 0 center;
+}
+
+/** 
+ * Style rules for Demo page
+ */
+.slide h2, .slide p {
+  margin:10px;
+}
+.slide h2 {
+  font:italic 24px Georgia, "Times New Roman", Times, serif;
+  color:#ccc;
+}
+.slide img {
+  float:right;
+  margin:0 15px;
+}
+
+#slideshow-control { }
+#slideshow-control div
+{
+	float:left;
+	border:0px solid red;
+	height:35px;
+}
+#slideshow-control  a
+{
+	width:90px;
+	float:left;
+	padding:10px 33px;
+	border-top:0px solid #252525;
+	text-align:center;
+	color:#CCCCCC;
+	font-size:14px;
+	font-family: "Trebuchet MS", Times, serif;
+	text-decoration:none;
+	text-transform:uppercase;
+        text-shadow: 0 0 2px gray;
+}
+#slideshow-control  a:hover
+{
+	color:#F57B00;
+}
+#slideshow-control div.selected a
+{
+	color:#F57B00;
+}
+
+

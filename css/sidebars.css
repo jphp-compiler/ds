@@ -1,0 +1,55 @@
+ul#services {
+clear:right;
+display:block;
+list-style-type:none;
+margin:1px auto 64px;
+padding:0;
+width:270px;
+}
+ ul#services li {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:transparent none repeat scroll 0 0;
+float:left;
+padding:0;
+}
+ul#services li a {
+background-image:url(/img/sprite-icons.png);
+background-repeat:no-repeat;
+display:block;
+height:57px;
+padding-left:1px;
+text-indent:-10000px;
+width:53px;
+}
+ul#services li a.ser_rss {
+background-position:0 4px;
+}
+ul#services li a.ser_rss:hover {
+background-position:0 -53px;
+}
+ul#services li a.ser_twi {
+background-position:-53px 4px;
+}
+ul#services li a.ser_twi:hover {
+background-position:-53px -53px;
+}
+ul#services li a.ser_yaru {
+background-position:-106px 4px;
+}
+ul#services li a.ser_yaru:hover {
+background-position:-106px -53px;
+}
+ul#services li a.ser_steam {
+background-position:-159px 4px;
+}
+ul#services li a.ser_steam:hover {
+background-position:-159px -53px;
+}
+ul#services li a.ser_vk {
+background-position:-212px 4px;
+}
+ul#services li a.ser_vk:hover {
+background-position:-212px -53px;
+}
